@@ -37,11 +37,11 @@ def check_numbers():
             print('Ваше число больше загаданного, попробуйте еще разок')
         else:
             print(f'Вы угадали, поздравляем! Число: {num}, число попыток {count}')
-            x = input('Cыграем еще? ведите y/n: ')
+            x = input('Cыграем еще? ведите y/not y: ')
             if x == 'y':
                 print('Продолжим!')
                 check_numbers()
-            elif x == 'n':
+            elif x != 'y':
                 print('До встречи!')
             break
 
